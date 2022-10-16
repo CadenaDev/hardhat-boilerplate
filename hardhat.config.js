@@ -4,9 +4,9 @@ require('dotenv').config();
 module.exports = {
   solidity: "0.8.0",
   networks: {
-    rinkeby: {
-      url: `${process.env.POKT_RINKEBY_URL}`,
-      accounts: [`0x${process.env.RINKEBY_PRIVATE_KEY}`],
+    goerli: {
+      url: `${process.env.POKT_GOERLI_URL}`,
+      accounts: [`${process.env.GOERLI_PRIVATE_KEY}`]
     }
   }
 };
